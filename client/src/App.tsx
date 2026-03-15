@@ -48,6 +48,9 @@ export default function App() {
       setResult(data);
       setScreen("results");
     },
+    onError: () => {
+      setScreen("capture");
+    },
   });
 
   // Show onboarding on first launch
